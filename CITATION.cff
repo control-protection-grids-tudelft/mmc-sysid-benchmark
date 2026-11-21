@@ -7,7 +7,7 @@ date-released: 2026-11-21
 license:
   - MIT
   - CC-BY-4.0
-repository-code: "https://github.com/<owner>/mmc-sysid-benchmark"
+repository-code: "https://github.com/control-protection-grids-tudelft/mmc-sysid-benchmark"
 abstract: >-
   Code and data for a controlled simulation-based benchmark of classical,
   nonlinear/ML-based, and hybrid/physics-informed system identification

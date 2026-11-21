@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it using the metadata below, and cite the associated paper (preferred-citation)."
+title: "mmc-sysid-benchmark: System identification benchmark for a grid-connected MMC (RTDS/RSCAD)"
+type: software
+version: 1.0.0
+date-released: 2026-11-21
+license: MIT
+repository-code: "https://github.com/<owner>/mmc-sysid-benchmark"
+abstract: >-
+  Code and data for a controlled simulation-based benchmark of classical,
+  nonlinear/ML-based, and hybrid/physics-informed system identification
+  methods, applied to a high-fidelity grid-connected modular multilevel
+  converter (MMC) model of the CIGRE B4.57 MMC-HVDC system simulated in
+  RTDS/RSCAD.
+keywords:
+  - system identification
+  - converter-dominated power systems
+  - modular multilevel converter
+  - HVDC
+  - subspace identification
+  - impedance identification
+  - machine learning
+  - physics-informed learning
+  - RTDS
+authors:
+  - family-names: Singh
+    given-names: Sunny
+    email: s.singh-6@tudelft.nl
+    affiliation: "Delft University of Technology"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Mishra
+    given-names: Saurabh
+    affiliation: "Indian Institute of Technology (BHU), Varanasi"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Reyes Dreke
+    given-names: Victor Daniel
+    affiliation: "Delft University of Technology"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Rane
+    given-names: Rahul
+    affiliation: "Delft University of Technology"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Lekić
+    given-names: Aleksandra
+    affiliation: "Delft University of Technology"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+preferred-citation:
+  type: article
+  title: "A Survey and Simulation-Based Benchmark of System Identification for Converter-Dominated Power Systems"
+  status: submitted
+  year: 2026
+  notes: "Preprint submitted to Elsevier. Update with journal, volume, pages and DOI upon publication."
+  # journal: "<journal name>"
+  # doi: "10.xxxx/xxxxx"
+  authors:
+    - family-names: Singh
+      given-names: Sunny
+    - family-names: Mishra
+      given-names: Saurabh
+    - family-names: Reyes Dreke
+      given-names: Victor Daniel
+    - family-names: Rane
+      given-names: Rahul
+    - family-names: Lekić
+      given-names: Aleksandra

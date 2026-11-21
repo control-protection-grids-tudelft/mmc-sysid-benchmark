@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or dataset, please cite it using the metadata below, and cite the associated paper (preferred-citation)."
 title: "mmc-sysid-benchmark: System identification benchmark for a grid-connected MMC (RTDS/RSCAD)"
 type: software
-version: 1.0.0
+version: "v1.0"
+doi: 10.5281/zenodo.24417707
 date-released: 2026-11-21
 license:
   - MIT

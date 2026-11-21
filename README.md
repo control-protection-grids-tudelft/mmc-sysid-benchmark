@@ -1,5 +1,9 @@
 # mmc-sysid-benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24417707.svg)](https://doi.org/10.5281/zenodo.24417707)
+[![Code: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **A Survey and Simulation-Based Benchmark of System Identification for Converter-Dominated Power Systems**
 
 Code and data for a controlled benchmark of system-identification (SI) methods on a high-fidelity grid-connected modular multilevel converter (MMC) model, simulated in RTDS/RSCAD. The benchmark accompanies a structured review of SI methods in three families:
@@ -81,7 +85,19 @@ If you use this code or dataset, please cite the paper. GitHub's **"Cite this re
 }
 ```
 
-Please also cite the data and software themselves, not only the paper, when you reuse them.
+When you reuse the data or code, please also cite them directly:
+
+```bibtex
+@software{singh2026mmcsysid,
+  author    = {Singh, Sunny and Mishra, Saurabh and Reyes Dreke, Victor Daniel and Rane, Rahul and Leki{\'c}, Aleksandra},
+  title     = {mmc-sysid-benchmark: System identification benchmark for a grid-connected {MMC} ({RTDS/RSCAD})},
+  version   = {v1.0},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.24417707},
+  url       = {https://doi.org/10.5281/zenodo.24417707}
+}
+```
 
 ## Authors
 

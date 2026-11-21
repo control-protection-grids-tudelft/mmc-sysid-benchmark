@@ -21,24 +21,25 @@ All methods use the same dataset, input–output definitions, preprocessing, val
 - **Key parameters:** 200 submodules per arm, $L_\text{arm}$ = 0.029 p.u., $C_\text{SM}$ = 10 mF, 60 Hz, 220 kV secondary, 266.667 MVA per phase
 - **MIMO structure:** 2 × 2 *dq*-frame admittance. The inputs are the *dq* voltage perturbations ($v_d$, $v_q$) and the outputs are the *dq* current responses ($i^\Delta_d$, $i^\Delta_q$) at the PCC.
 
-| Experiment | Content | Use |
-|---|---|---|
-| Frequency domain | ≈ 100 complex frequency-response points (99 frequencies) | N4SID, PEM, FDSID, ARX, OE; noise and Monte Carlo study (SNR 20/30/40 dB, 100 runs) |
-| Time domain | 20,000 samples, $T_s$ = 50 µs; first 50 % for estimation, last 50 % for validation | Classical, nonlinear and hybrid methods |
-
 ## Data
 
-The dataset is hosted externally:
-**[Google Drive: dataset folder](https://drive.google.com/drive/folders/1ja6PIDCBjcrZljfRsmoqGAZ5CM7Yuj7T)**
+The full dataset is included in [`data/`](data/), about 49 MB of RSCAD exports. See [`data/README.md`](data/README.md) for file formats, signal names and the test-case naming scheme.
 
-Download it into `data/`. See [`data/README.md`](data/README.md) for the expected layout.
+| Folder | Content |
+|---|---|
+| `data/time_domain/benchmark_IGDQ/` | time-domain benchmark record: $v_d, v_q \rightarrow i_d, i_q$; 20,000 samples, Ts = 50 µs; first 50 % for estimation, last 50 % for validation |
+| `data/time_domain/Test1–5_CT_*` | time-domain records under different noise levels, power setpoints and L–R parameters |
+| `data/frequency_domain/Test6–11_FT_*` | 2 × 2 *dq* admittance sweeps (up to 70 frequencies, 1–1000 Hz) under different noise levels, power setpoints and L–R parameters |
+
+[`data/manifest.csv`](data/manifest.csv) indexes every file, and [`data/SHA256SUMS`](data/SHA256SUMS) lets you check integrity.
 
 ## Repository structure
 
-<!-- TODO: adjust to the actual repository contents -->
+<!-- TODO: add code folders once uploaded -->
 ```
 mmc-sysid-benchmark/
-├── data/                  # dataset (downloaded separately, see data/README.md)
+├── data/                  # RTDS/RSCAD dataset (time- and frequency-domain)
+├── assets/logos/          # funder logos
 ├── classical/             # frequency- and time-domain linear SI (Sec. 2)
 ├── nonlinear_ml/          # NLARX, NLHW and ML estimators (Sec. 3)
 ├── hybrid/                # physics-informed / hybrid identification (Sec. 4)
@@ -94,8 +95,22 @@ Faculty of Electrical Engineering, Mathematics and Computer Science, Delft Unive
 
 ## Acknowledgement
 
-This work was carried out within the **MITIGATE-HARM** project, funded by the CETPartnership under the Joint Call 2024. CETPartnership research projects are co-funded by the European Commission (Grant Agreement No. 101069750) and the national funding organisations listed at <https://cetpartnership.eu/>.
+<p align="center">
+  <img src="assets/logos/mitigate-harm.png" alt="MITIGATE-HARM" height="70">
+  &nbsp;&nbsp;
+  <img src="assets/logos/cetpartnership.png" alt="CETPartnership" height="70">
+  &nbsp;&nbsp;
+  <img src="assets/logos/eu-funded.png" alt="Funded by the European Union" height="70">
+  &nbsp;&nbsp;
+  <img src="assets/logos/nwo.png" alt="NWO" height="70">
+</p>
+
+We gratefully acknowledge the support of the **MITIGATE-HARM** project (*MITIGATE HARMonics in power electronics-based power systems*), coordinated by TU Delft. We thank all project partners for their collaboration and valuable input.
+
+MITIGATE-HARM is funded by CETPartnership, the Clean Energy Transition Partnership, under the 2024 joint call for research proposals, co-funded by the European Commission (GA N°101069750) and with the funding organisations detailed on <https://cetpartnership.eu/funding-agencies-and-call-modules>. The Dutch part of the project is funded by the Dutch Research Council (NWO).
 
 ## License
 
-Code: [MIT](LICENSE). Data: CC BY 4.0 (see [`data/README.md`](data/README.md)).
+- **Code:** [MIT](LICENSE)
+- **Data** (`data/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Logos** (`assets/logos/`) remain the property of their respective owners and are not covered by either license.

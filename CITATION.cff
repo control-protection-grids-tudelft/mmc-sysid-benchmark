@@ -4,7 +4,9 @@ title: "mmc-sysid-benchmark: System identification benchmark for a grid-connecte
 type: software
 version: 1.0.0
 date-released: 2026-11-21
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/<owner>/mmc-sysid-benchmark"
 abstract: >-
   Code and data for a controlled simulation-based benchmark of classical,

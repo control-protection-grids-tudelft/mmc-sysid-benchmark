@@ -1,0 +1,44 @@
+{
+  "title": "mmc-sysid-benchmark: System identification benchmark for a grid-connected MMC (RTDS/RSCAD)",
+  "upload_type": "software",
+  "description": "Code and data for a controlled simulation-based benchmark of classical, nonlinear/ML-based, and hybrid/physics-informed system identification methods applied to a high-fidelity grid-connected modular multilevel converter (MMC) model of the CIGRE B4.57 MMC-HVDC system simulated in RTDS/RSCAD. Accompanies the paper 'A Survey and Simulation-Based Benchmark of System Identification for Converter-Dominated Power Systems'.",
+  "creators": [
+    {
+      "name": "Singh, Sunny",
+      "affiliation": "Delft University of Technology"
+    },
+    {
+      "name": "Mishra, Saurabh",
+      "affiliation": "Indian Institute of Technology (BHU), Varanasi"
+    },
+    {
+      "name": "Reyes Dreke, Victor Daniel",
+      "affiliation": "Delft University of Technology"
+    },
+    {
+      "name": "Rane, Rahul",
+      "affiliation": "Delft University of Technology"
+    },
+    {
+      "name": "Lekić, Aleksandra",
+      "affiliation": "Delft University of Technology"
+    }
+  ],
+  "keywords": [
+    "system identification",
+    "converter-dominated power systems",
+    "modular multilevel converter",
+    "HVDC",
+    "subspace identification",
+    "machine learning",
+    "physics-informed learning",
+    "RTDS"
+  ],
+  "license": "MIT",
+  "grants": [
+    {
+      "id": "10.13039/501100000780::101069750"
+    }
+  ],
+  "notes": "We gratefully acknowledge the support of the MITIGATE-HARM project (MITIGATE HARMonics in power electronics-based power systems), coordinated by TU Delft. MITIGATE-HARM is funded by CETPartnership, the Clean Energy Transition Partnership, under the 2024 joint call for research proposals, co-funded by the European Commission (GA N°101069750) and with the funding organisations detailed on https://cetpartnership.eu/funding-agencies-and-call-modules. The Dutch part of the project is funded by the Dutch Research Council (NWO). Code: MIT. Data (data/): CC BY 4.0."
+}

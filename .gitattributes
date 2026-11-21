@@ -1,0 +1,9 @@
+# Keep dataset files byte-identical (SHA256SUMS must match); no line-ending conversion or diffs
+data/**/*.csv -text -diff linguist-generated
+data/**/*.svg -text -diff linguist-generated
+data/manifest.csv -text
+data/SHA256SUMS -text
+
+# Images
+*.png binary
+*.jpg binary
